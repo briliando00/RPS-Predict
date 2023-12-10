@@ -1,4 +1,4 @@
-![image](https://github.com/briliando00/RPS-Predict/assets/71593813/e904cfe1-5b23-4a8d-a193-47ad0a22c578)# Rock Paper Scissors Image Classification
+# Rock Paper Scissors Image Classification
 This project involves building a Convolutional Neural Network (CNN) for image classification of rock, paper, and scissors hand gestures. The model is trained using the Keras library and deployed as a web application using Flask.
 
 ## Dataset
