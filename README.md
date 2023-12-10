@@ -3,8 +3,36 @@ This project involves building a Convolutional Neural Network (CNN) for image cl
 
 ## Dataset
 The dataset consists of images of hand gestures representing rock, paper, and scissors. The dataset is divided into training, validation, and test sets.
+
 ![rock01-000](https://github.com/briliando00/RPS-Predict/assets/71593813/6478068d-9369-4241-8e5f-da0937ff3967)
 ![paper01-000](https://github.com/briliando00/RPS-Predict/assets/71593813/4fefa0da-e827-498e-9998-2db098b35b5d)
 ![scissors01-000](https://github.com/briliando00/RPS-Predict/assets/71593813/088b9324-30c7-41ea-8bd7-531b2a767b76)
+
+## Model Architecture
+
+The CNN model architecture is as follows:
+
+- Input Layer: 3x100x150 (RGB image with dimensions 100x150 pixels)
+- Convolutional Layer with 16 filters, kernel size (3, 3), and ReLU activation
+- MaxPooling Layer (2, 2)
+- Dropout Layer (20% dropout)
+- Convolutional Layer with 16 filters, kernel size (3, 3), and ReLU activation
+- MaxPooling Layer (2, 2)
+- Dropout Layer (20% dropout)
+- Convolutional Layer with 32 filters, kernel size (3, 3), and ReLU activation
+- MaxPooling Layer (2, 2)
+- Dropout Layer (20% dropout)
+- Flatten Layer
+- Dense Layer with 64 neurons and ReLU activation
+- Dropout Layer (20% dropout)
+- Output Layer with 3 neurons and softmax activation (multi-class classification)
+
+## Training
+
+The model is trained for 10 epochs using the training dataset. The training progress is monitored, and the learning rate is reduced by a factor of 0.5 if there is no improvement in validation accuracy for 2 consecutive epochs.
+
+```bash
+python train_model.py
+
 
 
