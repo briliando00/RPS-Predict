@@ -32,6 +32,33 @@ The CNN model architecture is as follows:
 The model is trained for 10 epochs using the training dataset. The training progress is monitored, and the learning rate is reduced by a factor of 0.5 if there is no improvement in validation accuracy for 2 consecutive epochs.
 and then the model save to .h5 file
 
+## Evaluation
+
+Graph Training and Validation Accuracy :
+
+![image](https://github.com/briliando00/RPS-Predict/assets/71593813/abf13374-81c5-44d0-bdf1-deacf3b909b2)
+
+Graph Training and Validation Loss :
+
+![image](https://github.com/briliando00/RPS-Predict/assets/71593813/d7887e7b-0342-4f07-a6fa-326ac567f38a)
+
+Classification Report
+
+              precision    recall  f1-score   support
+
+        Rock       1.00      1.00      1.00        82
+       Paper       1.00      1.00      1.00        82
+    Scissors       1.00      1.00      1.00        79
+
+    accuracy                           1.00       243
+   macro avg       1.00      1.00      1.00       243
+weighted avg       1.00      1.00      1.00       243
+
+## Result
+
+![image](https://github.com/briliando00/RPS-Predict/assets/71593813/b5eda0c8-46e7-4e0d-9946-862234788897)
+
+
 ## Web Deployment
 
 The trained model is deployed as a web application using Flask. Users can upload an image, and the model will predict whether the hand gesture represents rock, paper, or scissors.
