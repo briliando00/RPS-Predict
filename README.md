@@ -31,8 +31,13 @@ The CNN model architecture is as follows:
 
 The model is trained for 10 epochs using the training dataset. The training progress is monitored, and the learning rate is reduced by a factor of 0.5 if there is no improvement in validation accuracy for 2 consecutive epochs.
 
-```bash
-python train_model.py
+## Web Deployment
+
+The trained model is deployed as a web application using Flask. Users can upload an image, and the model will predict whether the hand gesture represents rock, paper, or scissors.
+
+python app.py
+
+Visit http://localhost:5000/ in your web browser to use the application.
 
 
 
