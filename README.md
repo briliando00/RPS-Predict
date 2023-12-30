@@ -68,5 +68,11 @@ python app.py
 
 Visit http://localhost:5000/ in your web browser to use the application.
 
+Example Of Deployment
+
+<img width="903" alt="Untitled" src="https://github.com/briliando00/RPS-Predict/assets/71593813/3b7efe4b-9967-4d98-b862-510fc151dfa3">
+
+
+
 
 
